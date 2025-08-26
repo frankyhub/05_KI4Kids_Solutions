@@ -682,7 +682,7 @@ model = YOLO("yolov8n.pt")  # load a pretrained model (recommended for training)
 
 # Use the model
 #results = model.train(data=r"D:\Helmet-Detection-using-YOLOv8-main\Bike Helmet Detection.v2-more-preprocessing-augmentation.yolov8\data.yaml", epochs=100)  # train the model
-results = model.train(data=r"D:\helmet\helmet.yolov8\data.yaml", epochs=100)  # train the model
+results = model.train(data=r"D:\he\helmet_control\data.yaml", epochs=1)  # train the model
 ```
 
 ```
