@@ -663,7 +663,40 @@ cv2.destroyAllWindows()  # destroy all opened windows
 ![Bild](pic/workout2.png)
 
 ---
+## Helm Detect
 
+```
+#train.py
+#pip install ultralytics
+
+#https://github.com/Sritankar/helmet-verification-using-yolo-v8/tree/main?tab=readme-ov-file
+from ultralytics import YOLO
+
+# Load a model
+model = YOLO("yolov8n.yaml")  # build a new model from scratch
+model = YOLO("yolov8n.pt")  # load a pretrained model (recommended for training)
+
+# Use the model
+#results = model.train(data=r"D:\Helmet-Detection-using-YOLOv8-main\Bike Helmet Detection.v2-more-preprocessing-augmentation.yolov8\data.yaml", epochs=100)  # train the model
+results = model.train(data=r"D:\helmet\helmet.yolov8\data.yaml", epochs=100)  # train the model
+```
+
+```
+# Helm detect
+# detect.py
+
+from ultralytics import YOLO
+model = YOLO("helmet.pt")  
+#results = model("helmet.mp4", save=True, show=True)
+#results = model("ub_arch.mp4", save=True, show=True)
+#results = model("biker.mp4", save=True, show=True)
+results = model("baustelle.mp4", save=True, show=True)
+
+```
+
+![Bild](pic/helmet4.png)
+
+---
 ## Parkplatzmanagement
 
 ```
