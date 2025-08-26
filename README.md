@@ -664,19 +664,16 @@ cv2.destroyAllWindows()  # destroy all opened windows
 ![Bild](pic/workout2.png)
 
 ---
-## Helm control
+## Helmet control
 
 ```
-git clone https://github.com/prince0310/Helmet-Detection-using-YOLOv8.git
+git clone https://github.com/frankyhub/helmet_control.git
 ```
+
 ```
-yolo predict model=best.pt source="helmet.mp4"
-```
-```
-#train.py
+#training.py
 #pip install ultralytics
 
-#https://github.com/Sritankar/helmet-verification-using-yolo-v8/tree/main?tab=readme-ov-file
 from ultralytics import YOLO
 
 # Load a model
@@ -689,15 +686,15 @@ results = model.train(data=r"D:\helmet\helmet.yolov8\data.yaml", epochs=100)  # 
 ```
 
 ```
-# Helm detect
+# Helmet detect
 # detect.py
 
 from ultralytics import YOLO
 model = YOLO("helmet.pt")  
 #results = model("helmet.mp4", save=True, show=True)
 #results = model("ub_arch.mp4", save=True, show=True)
-#results = model("biker.mp4", save=True, show=True)
-results = model("baustelle.mp4", save=True, show=True)
+results = model("biker.mp4", save=True, show=True)
+#results = model("baustelle.mp4", save=True, show=True)
 
 ```
 
