@@ -21,6 +21,7 @@
 - Straßenverkehrszähler
 - Objektzähler
 - Workout control
+- Helm control
 - Parkplatz Management
 
 ![Bild](pic/person.png)
@@ -663,7 +664,7 @@ cv2.destroyAllWindows()  # destroy all opened windows
 ![Bild](pic/workout2.png)
 
 ---
-## Helm Detect
+## Helm control
 
 ```
 git clone https://github.com/prince0310/Helmet-Detection-using-YOLOv8.git
