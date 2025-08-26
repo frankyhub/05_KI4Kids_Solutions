@@ -666,6 +666,12 @@ cv2.destroyAllWindows()  # destroy all opened windows
 ## Helm Detect
 
 ```
+git clone https://github.com/prince0310/Helmet-Detection-using-YOLOv8.git
+```
+```
+yolo predict model=best.pt source="helmet.mp4"
+```
+```
 #train.py
 #pip install ultralytics
 
