@@ -2,6 +2,9 @@
 
 <div align="center">
 
+# KI4Kids Solutions
+
+
 |[:skull:ISSUE](https://github.com/KI4kids/05_KI4kids_Solutions/issues?q=is%3Aissue)|[:speech_balloon: Forum /Discussion](https://github.com/KI4kids/05_KI4kids_Solutions/discussions)|[:grey_question:WiKi](https://github.com/KI4kids/05_KI4kids_Solutions/blob/main/wiki.md)|
 |--|--|--|
 | | | | 
@@ -13,7 +16,7 @@
 ---
 
 
-# KI4Kids Solutions
+## KI4Kids Beispiele
 - Mengenbestimmung
 - Distanzmessung
 - Geschwindigkeitsmessung
