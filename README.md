@@ -619,45 +619,45 @@ cv2.destroyAllWindows()
 
 Kontrolliert die Körperhaltung bei Workouts
 
-Im Standard-YOLO11-Pose-Modell gibt es 17 Keypoints, die jeweils einen anderen Teil des menschlichen Körpers darstellen. Hier ist die Zuordnung jedes Index zu seinem jeweiligen Körpergelenk:
+Im Standard-YOLO11-Pose-Modell gibt es 17 (von 0-16) Keypoints, die jeweils einen anderen Teil des menschlichen Körpers darstellen. Hier ist die Zuordnung jedes Index zu seinem jeweiligen Körpergelenk:
 
 ![pic](pic/keypointmap.png)
 
 
 
-1 Nase
+0 Nase
 
-2 Linkes Auge
+1 Linkes Auge
 
-3 Rechtes Auge
+2 Rechtes Auge
 
-4 Linkes Ohr
+3 Linkes Ohr
 
-5 Rechtes Ohr
+4 Rechtes Ohr
 
-6 Linke Schulter
+5 Linke Schulter
 
-7 Rechte Schulter
+6 Rechte Schulter
 
-8 Linker Ellbogen
+7 Linker Ellbogen
 
-9 Rechter Ellbogen
+8 Rechter Ellbogen
 
-10 Linkes Handgelenk
+9 Linkes Handgelenk
 
-11 Rechtes Handgelenk
+10 Rechtes Handgelenk
 
-12 Linke Hüfte
+11 Linke Hüfte
 
-13 Rechte Hüfte
+12 Rechte Hüfte
 
-14 Linkes Knie
+13 Linkes Knie
 
-15 Rechtes Knie
+14 Rechtes Knie
 
-16 Linker Knöchel
+15 Linker Knöchel
 
-17 Rechter Knöchel
+16 Rechter Knöchel
 
 
 Python
