@@ -617,7 +617,7 @@ cv2.destroyAllWindows()
 
 ## workout.py
 
-Kontrolliert Körperhaltung bei Workouts
+Kontrolliert die Körperhaltung bei Workouts
 
 ![pic](pic/keypointmap.png)
 
@@ -625,7 +625,7 @@ Python
 
 ```
 # workout.py
-# kontrolliert Körperhaltung bei Workouts
+# Kontrolliert die Körperhaltung bei Workouts
 
 import cv2
 
