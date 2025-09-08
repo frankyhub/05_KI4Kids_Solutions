@@ -621,6 +621,26 @@ Kontrolliert die Körperhaltung bei Workouts
 
 ![pic](pic/keypointmap.png)
 
+Im Standard-YOLO11-Pose-Modell gibt es 17 Keypoints, die jeweils einen anderen Teil des menschlichen Körpers darstellen. Hier ist die Zuordnung jedes Index zu seinem jeweiligen Körpergelenk:
+
+1 Nase
+2 Linkes Auge
+3 Rechtes Auge
+4 Linkes Ohr
+5 Rechtes Ohr
+6 Linke Schulter
+7 Rechte Schulter
+8 Linker Ellbogen
+9 Rechter Ellbogen
+10 Linkes Handgelenk
+11 Rechtes Handgelenk
+12 Linke Hüfte
+13 Rechte Hüfte
+14 Linkes Knie
+15 Rechtes Knie
+16 Linker Knöchel
+17 Rechter Knöchel
+
 Python
 
 ```
