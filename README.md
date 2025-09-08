@@ -617,6 +617,10 @@ cv2.destroyAllWindows()
 
 ## workout.py
 
+Kontrolliert Körperhaltung bei Workouts
+
+![pic](pic/keypointmap.png)
+
 Python
 
 ```
