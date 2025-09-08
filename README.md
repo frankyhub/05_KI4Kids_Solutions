@@ -666,6 +666,8 @@ Im Standard-YOLO11-Pose-Modell gibt es 17 (von 0-16) Keypoints, die jeweils eine
 
 ![pic](pic/Ergebnis.jpg)
 
+![pic](pic/Pose2.jpg)
+
 
 Python
 
