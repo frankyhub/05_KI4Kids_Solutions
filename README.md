@@ -819,10 +819,10 @@ model = YOLO("best.pt")  # Lade ein vortrainiertes Modell
 results = model.train(data=r"D:/coin/data/data.yaml", epochs=50)  # !!!!!!!! 50 epochs !!!!!!!!!
 ```
 ```
+#detect.py
+
 # pip install opencv-python
 # pip install ultralytics
-
-# coin detect
 
 import sys
 import os
