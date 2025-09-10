@@ -802,13 +802,12 @@ model = YOLO("yolov8n.yaml")  # build a new model from scratch
 model = YOLO("yolov8n.pt")  # load a pretrained model (recommended for training)
 
 # Use the model
-results = model.train(data=r"D:\coin\data\data.yaml", epochs=100)  # train the model #!!!!! epochs=100) !!!!!
+results = model.train(data=r"D:\coin\data\data.yaml", epochs=100)  # Pfad anpassen!!!    train the model #!!!!! epochs=100) !!!!!
 ```
 
 ```
 # pip install opencv-python
 # pip install ultralytics
-# pip install opencv-python
 
 # coin detect
 
@@ -828,7 +827,7 @@ ROOT = Path(os.path.relpath(ROOT, Path.cwd()))
 model = YOLO('best.pt')
 #model = YOLO('yolov8n.pt')
 
-data=ROOT / "d:/coin/data/data.yaml"
+data=ROOT / "d:/coin/data/data.yaml" # Pfad anpassen!!!
   
 print(model.names) 
 
