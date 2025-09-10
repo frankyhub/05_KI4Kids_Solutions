@@ -789,6 +789,8 @@ results = model("biker.mp4", save=True, show=True)
 
 ![Bild](pic/euro_det.png)
 
+![Bild](pic/euro_detect.png)
+
 Python
 
 ```
