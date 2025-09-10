@@ -24,6 +24,7 @@
 - Objektzähler
 - Workout control
 - Helm control
+- Euro Münzen erkennen
 - Parkplatz Management
 
 ![Bild](pic/person.png)
