@@ -792,6 +792,52 @@ results = model("biker.mp4", save=True, show=True)
 
 ![Bild](pic/euro_detect.png)
 
+
+### Download Model Euro Münzen erkennen
+bash
+
+```
+mkdir coin
+
+cd coin
+
+mkdir data
+
+cd data
+
+wget https://frankyhub.de/Euro_data/data.yaml
+
+wget https://frankyhub.de/Euro_data/best.zip
+
+unzip best.zip
+
+rm best.zip
+
+wget https://frankyhub.de/Euro_data/test.zip
+
+unzip test.zip
+
+rm test.zip
+
+wget https://frankyhub.de/Euro_data/train.zip
+
+unzip train.zip
+
+rm train.zip
+
+wget https://frankyhub.de/Euro_data/valid.zip
+
+unzip valid.zip
+
+rm valid.zip
+
+mv best.pt /home/khf/coin
+
+dir
+```
+
+
+
 Python
 
 ```
