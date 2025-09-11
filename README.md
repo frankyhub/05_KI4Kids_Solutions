@@ -862,7 +862,16 @@ print(os.listdir("."))  # aktuelles Verzeichnis ist nun ~/coin
 
 ```
 
+### Zeige das Bild euro.jpg 
 
+Python
+
+```
+# Zeige das Bild euro.jpg 
+from PIL import Image
+img = Image.open("euro.jpg")
+img.show()
+```
 
 Python
 
