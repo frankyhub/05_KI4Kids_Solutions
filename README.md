@@ -835,7 +835,6 @@ rm valid.zip
 
 mv best.pt /home/khf/coin
 
-
 dir
 
 cd ..
