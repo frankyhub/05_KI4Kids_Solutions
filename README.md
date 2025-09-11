@@ -835,11 +835,12 @@ rm valid.zip
 
 mv best.pt /home/khf/coin
 
-wget https://frankyhub.de/Euro_data/euro.jpg
 
 dir
 
 cd ..
+
+wget https://frankyhub.de/Euro_data/euro.jpg
 
 dir
 
