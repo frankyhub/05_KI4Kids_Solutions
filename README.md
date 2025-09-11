@@ -794,54 +794,71 @@ results = model("biker.mp4", save=True, show=True)
 
 
 ### Download Model Euro Münzen erkennen
-bash
+
+Python
 
 ```
-cd
+import os
+import shutil
+import urllib.request
+import zipfile
 
-mkdir coin
+# Wechsle in das Home-Verzeichnis (oder ein beliebiges Startverzeichnis)
+os.chdir(os.path.expanduser("~"))
 
-cd coin
+# Erstelle Ordnerstruktur: coin/data
+os.makedirs("coin/data", exist_ok=True)
 
-mkdir data
+# Wechsle in den data-Ordner
+os.chdir("coin/data")
 
-cd data
+# Hilfsfunktion zum Herunterladen von Dateien
+def download_file(url, filename=None):
+    if not filename:
+        filename = url.split("/")[-1]
+    print(f"Downloading {filename} ...")
+    urllib.request.urlretrieve(url, filename)
 
-wget https://frankyhub.de/Euro_data/data.yaml
+# Hilfsfunktion zum Entpacken und Löschen von ZIP-Dateien
+def unzip_and_remove(zip_filename):
+    print(f"Unzipping {zip_filename} ...")
+    with zipfile.ZipFile(zip_filename, 'r') as zip_ref:
+        zip_ref.extractall(".")
+    os.remove(zip_filename)
 
-wget https://frankyhub.de/Euro_data/best.zip
+# Lade Dateien herunter und verarbeite sie
+download_file("https://frankyhub.de/Euro_data/data.yaml")
 
-unzip best.zip
+download_file("https://frankyhub.de/Euro_data/best.zip")
+unzip_and_remove("best.zip")
 
-rm best.zip
+download_file("https://frankyhub.de/Euro_data/test.zip")
+unzip_and_remove("test.zip")
 
-wget https://frankyhub.de/Euro_data/test.zip
+download_file("https://frankyhub.de/Euro_data/train.zip")
+unzip_and_remove("train.zip")
 
-unzip test.zip
+download_file("https://frankyhub.de/Euro_data/valid.zip")
+unzip_and_remove("valid.zip")
 
-rm test.zip
+# Verschiebe die Datei best.pt nach ~/coin
+shutil.move("best.pt", os.path.expanduser("~/coin/best.pt"))
 
-wget https://frankyhub.de/Euro_data/train.zip
+# Zeige den Inhalt des aktuellen Verzeichnisses (data)
+print("Inhalt von data:")
+print(os.listdir("."))
 
-unzip train.zip
+# Wechsle in das coin-Verzeichnis
+os.chdir("..")
 
-rm train.zip
+# Lade das Bild herunter
+download_file("https://frankyhub.de/Euro_data/euro.jpg")
 
-wget https://frankyhub.de/Euro_data/valid.zip
+# Zeige den Inhalt des coin-Verzeichnisses
+print("Inhalt von coin:")
+print(os.listdir("."))  # aktuelles Verzeichnis ist nun ~/coin
 
-unzip valid.zip
 
-rm valid.zip
-
-mv best.pt /home/khf/coin
-
-dir
-
-cd ..
-
-wget https://frankyhub.de/Euro_data/euro.jpg
-
-dir
 
 ```
 
