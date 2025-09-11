@@ -797,6 +797,8 @@ results = model("biker.mp4", save=True, show=True)
 bash
 
 ```
+cd
+
 mkdir coin
 
 cd coin
