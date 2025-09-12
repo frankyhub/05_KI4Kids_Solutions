@@ -92,6 +92,10 @@ In der Softwareentwicklung, besonders in Python, gibt es den Begriff der virtuel
 
 ### Das Environment xy installieren
 
+python3 -m venv venv
+source venv/bin/activate
+pip install somepackage
+
 bash
 
 ```
