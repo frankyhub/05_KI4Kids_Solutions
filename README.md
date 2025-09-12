@@ -32,13 +32,37 @@
 ---
 
 ### Vorbereitung
-- OS Update
 - Anaconda installieren
 - OpenCV installieren
+- Ein Environment installieren
 - Ultralytics installieren
 - frankyhub clonen
   
 ---
+
+## Virtual Environments in Anaconda (Virtuelle Umgebungen) 
+
+In der Softwareentwicklung, besonders in Python, gibt es den Begriff der virtuellen Umgebung oder virtual environment. Das ist eine isolierte Umgebung, in der du Software-Bibliotheken installieren kannst, ohne die globale Installation von Bibliotheken auf deinem System zu verändern. Dies ist besonders nützlich, um Versionskonflikte zwischen verschiedenen Projekten zu vermeiden.
+
+### Das Environment xy installieren
+
+bash
+
+```
+conda deactivate
+```
+
+```
+conda create -n xy
+```
+
+```
+conda activate xy
+```
+
+```
+conda env list
+```
 
 ### OpenCV installieren
 
