@@ -75,10 +75,54 @@ pip install ultralytics
 ```
 
 ---
-### frankyhub clonen
+### Download der png und mp4 Dateien
+
+Python
 
 ```
-git clone https://github.com/frankyhub/count.git
+#dlmp4.py
+
+import os
+import shutil
+import urllib.request
+import zipfile
+
+# Wechsle in das Home-Verzeichnis 
+os.chdir(os.path.expanduser("~"))
+
+# Erstelle den Ordner  mp4
+os.makedirs("mp4", exist_ok=True)
+
+# Wechsle in das Home-Verzeichnis 
+os.chdir(os.path.expanduser("~"))
+
+
+# Wechsle in den Ordner
+os.chdir("mp4")
+
+# Hilfsfunktion zum Herunterladen von Dateien
+def download_file(url, filename=None):
+    if not filename:
+        filename = url.split("/")[-1]
+    print(f"Downloading {filename} ...")
+    urllib.request.urlretrieve(url, filename)
+
+# Hilfsfunktion zum Entpacken und Löschen von ZIP-Dateien
+def unzip_and_remove(zip_filename):
+    print(f"Unzipping {zip_filename} ...")
+    with zipfile.ZipFile(zip_filename, 'r') as zip_ref:
+        zip_ref.extractall(".")
+    os.remove(zip_filename)
+
+download_file("https://frankyhub.de/KI_mp4/mp4.zip")
+unzip_and_remove("mp4.zip")
+
+# Zeige den Inhalt des aktuellen Verzeichnisses
+print("Inhalt von mp4:")
+print(os.listdir("."))
+
+# Wechsle in das Home-Verzeichnis 
+os.chdir(os.path.expanduser("~"))
 ```
 
 ---
