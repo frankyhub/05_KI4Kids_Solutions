@@ -92,11 +92,14 @@ In der Softwareentwicklung, besonders in Python, gibt es den Begriff der virtuel
 
 ### Das Environment xy installieren
 
-python3 -m venv test
+python3 -m venv yolo
 
-source test/bin/activate
+source yolo/bin/activate
+
+find ~ -type d -name "yolo"
 
 pip install somepackage
+
 
 bash
 
