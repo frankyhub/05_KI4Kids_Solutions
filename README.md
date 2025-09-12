@@ -40,6 +40,52 @@
   
 ---
 
+### Anaconda installieren
+
+bash
+```sh
+wget https://repo.anaconda.com/archive/Anaconda3-2025.06-0-Linux-aarch64.sh
+```
+
+cd tmp
+
+bash
+```sh
+sh Anaconda3-2025.06-0-Linux-aarch64.sh
+```
+
+- press ENTER to continue
+- q (Lizenzvereinbarungen mit q Abbrechen)
+- yes (Installation in /home/khf/anaconda3)
+- enter (Installing base environment)
+- yes (running conda)
+
+
+
+```diff
+
+! *** Die Shell neu starten *** !
+
+```
+
+
+Ist Anaconda korrekt installiert?
+
+bash
+
+```
+conda --version
+
+```
+
+Kontrolle:
+
+conda 25.5.1
+
+(base) khf@pi:~
+
+---
+
 ## Virtual Environments in Anaconda (Virtuelle Umgebungen) 
 
 In der Softwareentwicklung, besonders in Python, gibt es den Begriff der virtuellen Umgebung oder virtual environment. Das ist eine isolierte Umgebung, in der du Software-Bibliotheken installieren kannst, ohne die globale Installation von Bibliotheken auf deinem System zu verändern. Dies ist besonders nützlich, um Versionskonflikte zwischen verschiedenen Projekten zu vermeiden.
