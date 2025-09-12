@@ -713,12 +713,65 @@ Im Standard-YOLO11-Pose-Modell gibt es 17 (von 0-16) Keypoints, die jeweils eine
 
 ![pic](pic/Pose2.jpg)
 
+### Download des pose Models
+
+Python
+
+```
+
+#dlpose.py
+
+import os
+import shutil
+import urllib.request
+import zipfile
+
+# Wechsle in das Home-Verzeichnis 
+os.chdir(os.path.expanduser("~"))
+
+# Erstelle den Ordner  face
+os.makedirs("pose", exist_ok=True)
+
+# Wechsle in das Home-Verzeichnis 
+os.chdir(os.path.expanduser("~"))
+
+
+# Wechsle in den Ordner
+os.chdir("pose")
+
+# Hilfsfunktion zum Herunterladen von Dateien
+def download_file(url, filename=None):
+    if not filename:
+        filename = url.split("/")[-1]
+    print(f"Downloading {filename} ...")
+    urllib.request.urlretrieve(url, filename)
+
+# Hilfsfunktion zum Entpacken und Löschen von ZIP-Dateien
+def unzip_and_remove(zip_filename):
+    print(f"Unzipping {zip_filename} ...")
+    with zipfile.ZipFile(zip_filename, 'r') as zip_ref:
+        zip_ref.extractall(".")
+    os.remove(zip_filename)
+
+download_file("https://frankyhub.de/KI_pose/pose.zip")
+unzip_and_remove("pose.zip")
+
+
+# Zeige den Inhalt des aktuellen Verzeichnisses
+print("Inhalt von pose:")
+print(os.listdir("."))
+
+# Wechsle in das Home-Verzeichnis 
+os.chdir(os.path.expanduser("~"))
+
+```
+
+### Zeigt das Workout Bild
 
 Python
 
 ```
 # pose.py
-# Zeigt Workout Bild
 
 from ultralytics import YOLO
 
