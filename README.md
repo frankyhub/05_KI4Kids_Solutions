@@ -36,9 +36,33 @@
 - OpenCV installieren
 - Ein Environment installieren
 - Ultralytics installieren
-- frankyhub clonen
+- Bilder und Videos laden
   
 ---
+
+## Linux Standard Base - Versionsabfrage
+bash
+
+```bash
+lsb_release -a
+```
+
+| | |
+|--|--|
+|Distributor ID: | Debian|
+|Description:|Debian GNU/Linux 12 (bookworm)|
+|Relaese:|12|
+|Codename:|bookworm|
+| | |
+
+---
+
+## Anaconda 
+
+Anaconda ist eine Python-Distribution für Datenverarbeitung von großen Mengen, vorhersagende Analyse und wissenschaftliche Berechnungen. Bestandteile des Anaconda Pakets sind NumPy, SciPy, matplotlib, pandas, IPython, Jupyter Notebook, scikit-learn und der Bibliothek Intel MKL.
+
+### Versions-Kontrolle: https://repo.anaconda.com/archive/
+
 
 ### Anaconda installieren
 
@@ -82,65 +106,154 @@ Kontrolle:
 
 conda 25.5.1
 
-(base) khf@pi:~
+(base) khf@pi:~/temp $
 
 ---
 
-## Virtual Environments in Anaconda (Virtuelle Umgebungen) 
-
-In der Softwareentwicklung, besonders in Python, gibt es den Begriff der virtuellen Umgebung oder virtual environment. Das ist eine isolierte Umgebung, in der du Software-Bibliotheken installieren kannst, ohne die globale Installation von Bibliotheken auf deinem System zu verändern. Dies ist besonders nützlich, um Versionskonflikte zwischen verschiedenen Projekten zu vermeiden.
-
-### Das Environment xy installieren
-
-- python3 -m venv yolo
-- source yolo/bin/activate
-- find ~ -type d -name "yolo"
-- pip install somepackage
-
-- conda create -n yolov8 python=3.10
-- conda activate yolov8
-- pip install ultralytics
-
-
+### Python kontrollieren:
 
 bash
 
 ```
-conda deactivate
+python --version 
+```
+Python 3.13.5 
+
+---
+## Virtual Environments in Anaconda (Virtuelle Umgebungen) 
+
+In der Softwareentwicklung, besonders in Python, gibt es den Begriff der virtuellen Umgebung oder virtual environment. Das ist eine isolierte Umgebung, in der du Software-Bibliotheken installieren kannst, ohne die globale Installation von Bibliotheken auf deinem System zu verändern. Dies ist besonders nützlich, um Versionskonflikte zwischen verschiedenen Projekten zu vermeiden.
+
+### Das Environment solutions installieren
+
+bash
+
+```
+conda env list
 ```
 
 ```
-conda create -n xy
+conda create -n solutions
 ```
 
 ```
-conda activate xy
+conda activate solutions
 ```
 
 ```
 conda env list
 ```
 
-### OpenCV installieren
+### So könnte man das Environment solutions wieder löschen
 
-OpenCV
+```
+conda remove -n solutions --all
+```
+---
+---
+## Modelle und Datensätze
+
+### Modelle
+- yolo von Ultralytics
+- OpenCV von Intel
+- Pytorch  wurde von Meta AI (ehemals Facebook AI Research Lab) entwickelt seit 2017 Open source
+- keras von google, jetzt Open source 
+- TensorFlow von google
+
+### Datensätze
+- coco von Ultralytics
+- kaggle von google 
+- aws von Amazon web Service
+- Open X-Embodiment Dataset und 
+- Open-Physical-Interaction Dataset Collection von NVIDIA
+
+
+
+--- 
+
+### USB-Kamera testen
+
+
+### OpenCV 
+
+OpenCV (Open Source Computer Vision Library) wurde ursprünglich von Intel im Jahr 1999 initiiert und ist seitdem zu einer der beliebtesten Bibliotheken für Computer Vision geworden. 
+Die Bibliothek wurde entwickelt, um Forschern und Entwicklern eine einfache und effiziente Möglichkeit zu bieten, Computer Vision in Echtzeitanwendungen zu integrieren.
+So wurde OpenCV ein beliebtes und umfassende Model für Computervisionsaufgaben und bietet eine Vielzahl von Tools und Algorithmen für die Bild- und Videoverarbeitung, Objekterkennung und Gesichtserkennung.
+
+
+pip Installer
+
+pip install ist ein Befehl, der im Python-Paketmanager pip verwendet wird, um Python-Pakete aus dem Python Package Index (PyPI) oder anderen Quellen zu installieren. Im Wesentlichen ermöglicht er die Installation, Aktualisierung und Verwaltung von Python-Softwarepaketen.
+
+
+
+```
+conda install anaconda::pip
+
+```
+OpenCV Standardpaket installieren
 
 ```
 pip install opencv-python
 ```
-OpenCV Library
+
+Zusätzliche OpenCV Funktionen installieren
 
 ```
 pip install opencv-contrib-python
 ```
+### USB-Cam testen
+
+Der Code erfasst den Videostream, der von der Kamera generiert wird, und zeigt sowohl im BGR-Farb- als auch im Graumodus an. Mit q wird er beendet.
+
+```
+cd
+```
+```
+mkdir camtest
+```
+```
+cd camtest
+```
+
 Python
 
-```
+```Python
+# camtest.py
+# Video mit der USB-Kamera
+
+import numpy as np
 import cv2
-print(cv2.__version__)
+
+cap = cv2.VideoCapture(0)
+
+while(True):
+    # Bild für Bild erfassen
+    ret, frame = cap.read()
+
+    # Die Bilder im Frame
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+   
+    # Zeige den Frame an
+    cv2.imshow('frame',frame)  #In Farbe
+    #cv2.imshow('gray',gray)    #In SW
+
+    if cv2.waitKey(20) & 0xFF == ord('q'):
+        break
+
+# Programm beenden
+cap.release()
+cv2.destroyAllWindows()
+
 ```
 
-Kontrolle: '4.10.0'
+```
+python camtest.py
+```
+
+
+
+
 
 
 ---
