@@ -267,7 +267,7 @@ pip install ultralytics
 ```
 
 ---
-### Download der png und mp4 Dateien
+### Download der mp4 Dateien
 
 Python
 
