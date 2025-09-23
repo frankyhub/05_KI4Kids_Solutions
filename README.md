@@ -171,8 +171,6 @@ conda remove -n solutions --all
 
 --- 
 
-### USB-Kamera testen
-
 
 ### OpenCV 
 
