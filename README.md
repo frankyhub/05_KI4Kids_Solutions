@@ -1005,29 +1005,64 @@ cv2.destroyAllWindows()  # destroy all opened windows
 ![Bild](pic/workout2.png)
 
 ---
-## Helmet control
+### Helmet control Detect
 
-```
-git clone https://github.com/frankyhub/helmet_control.git
-```
+### Die benötigten Dateien downloaden
+
 Python
 
 ```Python
-#training.py
-#pip install ultralytics
+#dlhelmet.py
 
-from ultralytics import YOLO
+import os
+import shutil
+import urllib.request
+import zipfile
 
-# Load a model
-model = YOLO("yolov8n.yaml")  # build a new model from scratch
-model = YOLO("yolov8n.pt")  # load a pretrained model (recommended for training)
+# Wechsle in das Home-Verzeichnis 
+os.chdir(os.path.expanduser("~"))
 
-# Use the model
-#results = model.train(data=r"D:\Helmet-Detection-using-YOLOv8-main\Bike Helmet Detection.v2-more-preprocessing-augmentation.yolov8\data.yaml", epochs=100)  # train the model
-results = model.train(data=r"D:\he\helmet_control\data.yaml", epochs=1)  # train the model
+# Erstelle den Ordner  face
+os.makedirs("helmetcontrol", exist_ok=True)
+
+# Wechsle in das Home-Verzeichnis 
+os.chdir(os.path.expanduser("~"))
+
+
+# Wechsle in den Ordner
+os.chdir("helmetcontrol")
+
+# Hilfsfunktion zum Herunterladen von Dateien
+def download_file(url, filename=None):
+    if not filename:
+        filename = url.split("/")[-1]
+    print(f"Downloading {filename} ...")
+    urllib.request.urlretrieve(url, filename)
+
+# Hilfsfunktion zum Entpacken und Löschen von ZIP-Dateien
+def unzip_and_remove(zip_filename):
+    print(f"Unzipping {zip_filename} ...")
+    with zipfile.ZipFile(zip_filename, 'r') as zip_ref:
+        zip_ref.extractall(".")
+    os.remove(zip_filename)
+
+download_file("https://frankyhub.de/KI_helmet_control/helmet_control.zip")
+unzip_and_remove("helmet_control.zip")
+
+
+# Zeige den Inhalt des aktuellen Verzeichnisses
+print("Inhalt von helmetcontrol:")
+print(os.listdir("."))
+
+# Wechsle in das Home-Verzeichnis 
+os.chdir(os.path.expanduser("~"))
 ```
 
-```
+### Helmet control Detect
+
+Python
+
+```Python
 # Helmet detect
 # detect.py
 
@@ -1042,7 +1077,16 @@ results = model("biker.mp4", save=True, show=True)
 
 ![Bild](pic/helmet4.png)
 
+### Das Ergebis wurde als Video gespeichert:
+
+/home/khf/helmetcontrol/runs/detect/predict
+
 ---
+---
+
+
+
+
 ## Euro Münzen erkennen
 
 ![Bild](pic/euro.jpg)
