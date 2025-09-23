@@ -160,7 +160,7 @@ pip install ultralytics
 
 Python
 
-```
+```Python
 #dlmp4.py
 
 import os
@@ -213,7 +213,7 @@ os.chdir(os.path.expanduser("~"))
 
 Python
 
-```
+```Python
 #ob_count.py
 # Zählt Objekte in der queue region
 
@@ -271,7 +271,7 @@ cv2.destroyAllWindows()
 
 Python
 
-```
+```Python
 # distanz.py
 # Misst die Distanz zwischen 2 Fahrräder
 # Auswahl mit linker Maustaste
@@ -322,7 +322,7 @@ cv2.destroyAllWindows()  # destroy all opened windows
 
 Python
 
-```
+```Python
 #speed.py
 #Misst die Geschindigkeit von Fahrzeugen
 
@@ -377,7 +377,9 @@ cv2.destroyAllWindows()  # destroy all opened windows
 
 ## Personentracking
 
-```
+Python
+
+```Python
 # track.py
 # Vergibt Personen eine Track-Nummer
 
@@ -422,7 +424,9 @@ cv2.destroyAllWindows()
 
 ## Straßenverkehrszähler
 
-```
+Python
+
+```Python
 #verkehrcount.py  ok V15032025
 # Zählt Autos, Personen.... im Straßenverkehr
 
@@ -560,7 +564,7 @@ names:
 
 Python
 
-```
+```Python
 #camtest.py
 
 import numpy as np
@@ -595,7 +599,7 @@ Mit q beenden
 
 Python
 
-```
+```Python
 ## counter.py
 
 #counter.py  ok V15032025
@@ -642,7 +646,7 @@ cv2.destroyAllWindows()
 
 Python
 
-```
+```Python
 #birdcount.py  ok V15032025
 
 import cv2
@@ -694,7 +698,7 @@ cv2.destroyAllWindows()
 
 Python
 
-```
+```Python
 #bikecount.py  ok V15032025
 
 import cv2
@@ -798,7 +802,7 @@ Im Standard-YOLO11-Pose-Modell gibt es 17 (von 0-16) Keypoints, die jeweils eine
 
 Python
 
-```
+```Python
 
 #dlpose.py
 
@@ -851,7 +855,7 @@ os.chdir(os.path.expanduser("~"))
 
 Python
 
-```
+```Python
 # pose.py
 
 from ultralytics import YOLO
@@ -878,7 +882,7 @@ for result in results:
 
 Python
 
-```
+```Python
 # workout.py
 # Kontrolliert die Körperhaltung bei Workouts
 
@@ -930,8 +934,9 @@ cv2.destroyAllWindows()  # destroy all opened windows
 ```
 git clone https://github.com/frankyhub/helmet_control.git
 ```
+Python
 
-```
+```Python
 #training.py
 #pip install ultralytics
 
@@ -975,7 +980,7 @@ results = model("biker.mp4", save=True, show=True)
 
 Python
 
-```
+```Python
 import os
 import shutil
 import urllib.request
@@ -1044,7 +1049,7 @@ print(os.listdir("."))  # aktuelles Verzeichnis ist nun ~/coin
 
 Python
 
-```
+```Python
 # Zeige das Bild euro.jpg 
 from PIL import Image
 img = Image.open("euro.jpg")
@@ -1053,8 +1058,7 @@ img.show()
 
 Python
 
-```
-
+```Python
 # trainer.py
 
 from ultralytics import YOLO
@@ -1065,7 +1069,10 @@ model = YOLO("yolov8n.pt")  # Lade ein vortrainiertes Modell
 # Use the model
 results = model.train(data=r"D:\coin\data\data.yaml", epochs=100)  # Pfad anpassen!!!    train the model #!!!!! epochs=100) !!!!!
 ```
-```
+
+Python
+
+```Python
 # finetuning.py
 
 from ultralytics import YOLO
@@ -1076,7 +1083,10 @@ model = YOLO("best.pt")  # Lade ein vortrainiertes Modell
 # Use the model
 results = model.train(data=r"D:/coin/data/data.yaml", epochs=50)  # !!!!!!!! 50 epochs !!!!!!!!!
 ```
-```
+
+Python
+
+```Python
 #detect.py
 
 # pip install opencv-python
@@ -1125,14 +1135,18 @@ cv2.destroyAllWindows()
 ---
 ## Parkplatzmanagement
 
-```
+Python
+
+```Python
 # trainer.py
 import cv2
 from ultralytics import solutions
 solutions.ParkingPtsSelection()
 ```
 
-```
+Python
+
+```Python
 # parkplatz.py
 import cv2
 
@@ -1170,7 +1184,7 @@ cv2.destroyAllWindows()  # destroy all opened windows
 
 ## bounding_boxes.json
 
-```
+```json
 [
     {
         "points": [
