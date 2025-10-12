@@ -5,10 +5,10 @@
 # KI4Kids Solutions
 
 
-|[:skull:ISSUE](https://github.com/KI4kids/05_KI4kids_Solutions/issues?q=is%3Aissue)|[:speech_balloon: Forum /Discussion](https://github.com/KI4kids/05_KI4kids_Solutions/discussions)|[:grey_question:WiKi](https://github.com/KI4kids/05_KI4kids_Solutions/blob/main/wiki.md)|
+|[:skull:ISSUE](https://github.com/frankyhub/05_KI4kids_Solutions/issues?q=is%3Aissue)|[:speech_balloon: Forum /Discussion](https://github.com/frankyhub/05_KI4kids_Solutions/discussions)|[:grey_question:WiKi](https://github.com/frankyhub/05_KI4kids_Solutions/blob/main/wiki.md)|
 |--|--|--|
 | | | | 
-| <a href="https://github.com/KI4kids05_KI4kids_Solutions/pulse" alt="Activity"><img src="https://img.shields.io/github/commit-activity/m/badges/shields" />| <a href="https://github.com/KI4kids/05_KI4kids_Solutions/graphs/traffic"><img alt="ViewCount" src="https://views.whatilearened.today/views/github/KI4kids/github-clone-count-badge.svg">  |<a href="https://github.com/frankyhub?tab=stars"> ![GitHub User's stars](https://img.shields.io/github/stars/frankyhub)|
+| <a href="https://github.com/frankyhub/pulse" alt="Activity"><img src="https://img.shields.io/github/commit-activity/m/badges/shields" />| <a href="https://github.com/frankyhub/05_KI4kids_Solutions/graphs/traffic"><img alt="ViewCount" src="https://views.whatilearened.today/views/github/frankyhub/github-clone-count-badge.svg">  |<a href="https://github.com/frankyhub?tab=stars"> ![GitHub User's stars](https://img.shields.io/github/stars/frankyhub)|
 
 </div>
 
