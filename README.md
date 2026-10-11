@@ -2,16 +2,13 @@
 
 <div align="center">
 
-# KI4Kids Solutions
-
-
-|[:skull:ISSUE](https://github.com/frankyhub/05_KI4kids_Solutions/issues?q=is%3Aissue)|[:speech_balloon: Forum /Discussion](https://github.com/frankyhub/05_KI4kids_Solutions/discussions)|[:grey_question:WiKi](https://github.com/frankyhub/05_KI4kids_Solutions/blob/main/wiki.md)|
-|--|--|--|
-| | | | 
-| <a href="https://github.com/frankyhub/pulse" alt="Activity"><img src="https://img.shields.io/github/commit-activity/m/badges/shields" />| <a href="https://github.com/frankyhub/05_KI4kids_Solutions/graphs/traffic"><img alt="ViewCount" src="https://views.whatilearened.today/views/github/frankyhub/github-clone-count-badge.svg">  |<a href="https://github.com/frankyhub?tab=stars"> ![GitHub User's stars](https://img.shields.io/github/stars/frankyhub)|
+|[:skull:ISSUE](https://github.com/frankyhub/05_KI4Kids_Solutions/issues?q=is%3Aissue)|[:speech_balloon: Forum /Discussion](https://github.com/frankyhub/05_KI4Kids_Solutions/discussions)|[:grey_question:WiKi](https://github.com/frankyhub/05_KI4Kids_Solutions/wiki)||
+|--|--|--|--|
+| | | | |
+<a href="https://github.com/frankyhub/05_KI4Kids_Solutions/issues">![GitHub issues](https://img.shields.io/github/issues/frankyhub/05_KI4Kids_Solutions)![GitHub closed issues](https://img.shields.io/github/issues-closed/frankyhub/05_KI4Kids_Solutions)|<a href="https://github.com/frankyhub/05_KI4Kids_Solutions/discussions">![GitHub Discussions](https://img.shields.io/github/discussions/frankyhub/05_KI4Kids_Solutions)|<a href="https://github.com/frankyhub/05_KI4Kids_Solutions/6eleases">![GitHub release (with filter)](https://img.shields.io/github/v/release/frankyhub/05_KI4Kids_Solutions)|![Static Badge](https://img.shields.io/badge/RepoNr.:-%2095-blue)|
+|![GitHub Created At](https://img.shields.io/github/created-at/frankyhub/05_KI4Kids_Solutions)| <a href="https://github.com/frankyhub/05_KI4Kids_Solutions/pulse" alt="Activity"><img src="https://img.shields.io/github/commit-activity/m/badges/shields" />| <a href="https://github.com/frankyhub/05_KI4Kids_Solutions/graphs/traffic"><img alt="ViewCount" src="https://views.whatilearened.today/views/github/frankyhub/github-clone-count-badge.svg">  |<a href="https://github.com/frankyhub?tab=stars"> ![GitHub User's stars](https://img.shields.io/github/stars/frankyhub)||
 
 </div>
-
 
 
 
@@ -27,7 +24,9 @@
 - Euro Münzen erkennen
 - Parkplatz Management
 
-![Bild](pic/person.png)
+
+<img src="pic/person.png" width="800"> 
+<br> <br>
 
 ---
 
@@ -372,9 +371,11 @@ cv2.destroyAllWindows()
 
 ```
 
-![Bild](pic/person.png)
+<img src="pic/person.png" width="800"> 
+<br> <br>
 
-![Bild](pic/countqueue.png)
+<img src="pic/countqueue.png" width="800"> 
+<br> <br>
 
 ---
 
@@ -529,7 +530,9 @@ video_writer.release()
 cv2.destroyAllWindows()
 
 ```
-![Bild](pic/track.png)
+
+<img src="pic/track.png" width="800"> 
+<br> <br>
 
 ---
 
@@ -577,7 +580,9 @@ while(True):
 cap.release()
 cv2.destroyAllWindows()
 ```
-![Bild](pic/verkehrcount.png)
+
+<img src="pic/verkehrcount.png" width="800"> 
+<br> <br>
 
 ---
 
@@ -714,9 +719,8 @@ cap.release()
 cv2.destroyAllWindows()
 ```
 
-
-![Bild](pic/pcount.png)
-
+<img src="pic/pcount.png" width="800"> 
+<br> <br>
 
 ## birdcount.py
 
@@ -816,8 +820,8 @@ cap.release()
 cv2.destroyAllWindows()
 ```
 
-
-![Bild](pic/Bikecount.png)
+<img src="pic/Bikecount.png" width="800"> 
+<br> <br>
 
 ---
 
@@ -827,9 +831,8 @@ Kontrolliert die Körperhaltung bei Workouts
 
 Im Standard-YOLO11-Pose-Modell gibt es 17 (von 0-16) Keypoints, die jeweils einen anderen Teil des menschlichen Körpers darstellen. Hier ist die Zuordnung jedes Index zu seinem jeweiligen Körpergelenk:
 
-![pic](pic/keypointmap.png)
-
-
+<img src="pic/keypointmap.png" width="800"> 
+<br> <br>
 
 0 Nase
 
@@ -868,11 +871,14 @@ Im Standard-YOLO11-Pose-Modell gibt es 17 (von 0-16) Keypoints, die jeweils eine
 
 ### Workout Bild 
 
-![pic](pic/Jogger.png)
+<img src="pic/Jogger.png" width="800"> 
+<br> <br>
 
-![pic](pic/Ergebnis.jpg)
+<img src="pic/Ergebnis.jpg" width="800"> 
+<br> <br>
 
-![pic](pic/Pose2.jpg)
+<img src="pic/Pose2.jpg" width="800"> 
+<br> <br>
 
 ### Download des pose Models
 
@@ -1000,9 +1006,11 @@ video_writer.release()
 cv2.destroyAllWindows()  # destroy all opened windows
 ```
 
-![Bild](pic/workout.png)
+<img src="pic/workout.png" width="800"> 
+<br> <br>
 
-![Bild](pic/workout2.png)
+<img src="pic/workout2.png" width="800"> 
+<br> <br>
 
 ---
 ### Helmet control Detect
@@ -1075,7 +1083,8 @@ results = model("biker.mp4", save=True, show=True)
 
 ```
 
-![Bild](pic/helmet4.png)
+<img src="pic/helmet4.png" width="800"> 
+<br> <br>
 
 ### Das Ergebis wurde als Video gespeichert:
 
@@ -1089,12 +1098,14 @@ results = model("biker.mp4", save=True, show=True)
 
 ## Euro Münzen erkennen
 
-![Bild](pic/euro.jpg)
+<img src="pic/euro.jpg" width="800"> 
+<br> <br>
 
-![Bild](pic/euro_det.png)
+<img src="pic/euro_det.png" width="800"> 
+<br> <br>
 
-![Bild](pic/euro_detect.png)
-
+<img src="pic/euro_detect.png" width="800"> 
+<br> <br>
 
 ### Download Model Euro Münzen erkennen
 
@@ -1453,7 +1464,8 @@ cv2.destroyAllWindows()  # destroy all opened windows
 
 ---
 
-![Bild](pic/Parkplatz.png)
+<img src="pic/Parkplatz.png" width="800"> 
+<br> <br>
 
 ---
 
