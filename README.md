@@ -5,8 +5,12 @@
 |[:skull:ISSUE](https://github.com/frankyhub/05_KI4Kids_Solutions/issues?q=is%3Aissue)|[:speech_balloon: Forum /Discussion](https://github.com/frankyhub/05_KI4Kids_Solutions/discussions)|[:grey_question:WiKi](https://github.com/frankyhub/05_KI4Kids_Solutions/wiki)||
 |--|--|--|--|
 | | | | |
-<a href="https://github.com/frankyhub/05_KI4Kids_Solutions/issues">![GitHub issues](https://img.shields.io/github/issues/frankyhub/05_KI4Kids_Solutions)![GitHub closed issues](https://img.shields.io/github/issues-closed/frankyhub/05_KI4Kids_Solutions)|<a href="https://github.com/frankyhub/05_KI4Kids_Solutions/discussions">![GitHub Discussions](https://img.shields.io/github/discussions/frankyhub/05_KI4Kids_Solutions)|<a href="https://github.com/frankyhub/05_KI4Kids_Solutions/6eleases">![GitHub release (with filter)](https://img.shields.io/github/v/release/frankyhub/05_KI4Kids_Solutions)|![Static Badge](https://img.shields.io/badge/RepoNr.:-%2095-blue)|
+<a href="https://github.com/frankyhub/05_KI4Kids_Solutions/issues">![GitHub issues](https://img.shields.io/github/issues/frankyhub/05_KI4Kids_Solutions)![GitHub closed issues](https://img.shields.io/github/issues-closed/frankyhub/05_KI4Kids_Solutions)|<a href="https://github.com/frankyhub/05_KI4Kids_Solutions/discussions">![GitHub Discussions](https://img.shields.io/github/discussions/frankyhub/05_KI4Kids_Solutions)|<a href="https://github.com/frankyhub/05_KI4Kids_Solutions/6eleases">![GitHub release (with filter)](https://img.shields.io/github/v/release/frankyhub/05_KI4Kids_Solutions)|![Static Badge](https://img.shields.io/badge/RepoNr.:-%20096-blue)|
 |![GitHub Created At](https://img.shields.io/github/created-at/frankyhub/05_KI4Kids_Solutions)| <a href="https://github.com/frankyhub/05_KI4Kids_Solutions/pulse" alt="Activity"><img src="https://img.shields.io/github/commit-activity/m/badges/shields" />| <a href="https://github.com/frankyhub/05_KI4Kids_Solutions/graphs/traffic"><img alt="ViewCount" src="https://views.whatilearened.today/views/github/frankyhub/github-clone-count-badge.svg">  |<a href="https://github.com/frankyhub?tab=stars"> ![GitHub User's stars](https://img.shields.io/github/stars/frankyhub)||
+
+
+<img src="pic/person.png" width="800"> 
+<br> <br>
 
 </div>
 
@@ -25,8 +29,6 @@
 - Parkplatz Management
 
 
-<img src="pic/person.png" width="800"> 
-<br> <br>
 
 ---
 
